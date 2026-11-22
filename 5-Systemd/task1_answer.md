@@ -8,6 +8,10 @@ Systemd unit (юнит) — это базовый объект, которым �
 ### 2. Проверьте статус любого systemd unit. Какую информацию выводит эта команда?
 ```shell
 systemctl status crond
+
+<img width="833" height="235" alt="image" src="https://github.com/user-attachments/assets/869402e1-1762-4d57-b60b-93daa1d205c3" />
+
+
 ```
 * Loaded: Путь к файлу юнита и статус автозагрузки (enabled или disabled).
 * Active: Текущее состояние (active (running) или inactive (dead)), а также время, прошедшее с момента запуска.
@@ -25,6 +29,10 @@ sudo systemctl stop crond
 ```shell
 sudo systemctl start crond
 ```
+
+<img width="833" height="643" alt="image" src="https://github.com/user-attachments/assets/714ba797-80d6-4d71-84c8-288b64d3f44f" />
+
+
 ### 5. Уберите сервис из автозагрузки.
 ```shell
 sudo systemctl disable crond
@@ -34,6 +42,8 @@ sudo systemctl disable crond
 ```shell
 sudo systemctl enable crond
 ```
+
+<img width="1029" height="335" alt="image" src="https://github.com/user-attachments/assets/8651faa1-614e-4284-ae90-cd8afc888b47" />
 
 ### 7. Чем отличаются состояния active, enabled, disabled, failed?
 
@@ -54,8 +64,10 @@ sudo systemctl enable crond
 ```shell
 systemctl list-timers --all
 ```
+<img width="1057" height="553" alt="image" src="https://github.com/user-attachments/assets/d4823dcf-4ddd-432f-9495-cf33e1dcb398" />
 
 
+Таймер logrotate.timer запускает сервис logrotate.service.
 
 
 
